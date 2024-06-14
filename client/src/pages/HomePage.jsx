@@ -12,7 +12,9 @@ function HomePage() {
       <div className="product-list">
         {products.map((product) => {
           return (
-            <div className="product">
+            <div className="product" key={product.id}>
+              {" "}
+              {/* เพิ่ม key prop ที่นี่ */}
               <div className="product-preview">
                 <img
                   src="https://via.placeholder.com/250/250"
